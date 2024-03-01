@@ -1,6 +1,14 @@
 README.md in Japanese [here](https://github.com/yanosea/rep/blob/main/README_ja.md).
 
+# ⚠ Caution
+
+This application was made for co-workers.
+
+<div align="center">
+
 # 💌 rep
+
+</div>
 
 rep makes your reporting easier.
 
@@ -16,7 +24,8 @@ rep makes your reporting easier.
 
 You can send daily (opening / closing), weekly, monthly reports via `rep`.
 
-You can attache some files (ex. attendance sheet in Excel) in weekly and monthly .
+You can attache some files (ex. attendance sheet in Excel) in weekly and
+monthly.
 
 ## 🧩 Requirements
 
@@ -24,8 +33,10 @@ You can attache some files (ex. attendance sheet in Excel) in weekly and monthly
 
 ## 🚨 Notes
 
-- Ensure that you have set yourself as a BCC recipient and confirm that emails are sent correctly.
-- I do not take any responsibility for any losses, damages, or disadvantages arising from the use of this tool.
+- Ensure that you have set yourself as a BCC recipient and confirm that emails
+  are sent correctly.
+- I do not take any responsibility for any losses, damages, or disadvantages
+  arising from the use of this tool.
 
 ## 💻 OS
 
@@ -35,7 +46,8 @@ rep will support any platforms someday...💪
 
 ## 💿 Installation
 
-Download and run [rep-installer.exe](https://github.com/yanosea/rep/raw/main/rep-installer/rep-installer.exe).
+Download and run
+[rep-installer.exe](https://github.com/yanosea/rep/raw/main/rep-installer/rep-installer.exe).
 
 ## ✨ Update
 
@@ -45,26 +57,31 @@ rep can check updates via github. (You can disable it in config.)
 
 ### 🔧 Manually
 
-Download and run any version of the installer from the download link on the [release page](https://github.com/yanosea/rep/releases).
+Download and run any version of the installer from the download link on the
+[release page](https://github.com/yanosea/rep/releases).
 
 ## ⚙️ Configuration
 
 ### REP_DIR
 
- `REP_DIR` contains some folders.
+`REP_DIR` contains some folders.
 
 - `.cache`
-  - `.cache` is used for sending reports attached some files. So-called working directory.
+  - `.cache` is used for sending reports attached some files. So-called working
+    directory.
 - `config`
-  - `config` is used for config files. You can change config by editing config files directly.
+  - `config` is used for config files. You can change config by editing config
+    files directly.
 - `logs`
   - `logs` is used for rep logs. Error logs are output in `logs/errorlogs`.
 - `reports`
   - `reports` is used for saving reports as text files and sqlite db file.
 
-The default value of `REP_DIR` is your user profile (ex. `C:\Users\yanoseai\rep`).
+The default value of `REP_DIR` is your user profile (ex.
+`C:\Users\yanoseai\rep`).
 
-First, it is recommended to change the value of `REP_DIR` in `rep.dll.config` in the directory where rep was installed.
+First, it is recommended to change the value of `REP_DIR` in `rep.dll.config` in
+the directory where rep was installed.
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -113,7 +130,8 @@ Config files are `.toml`.
         - `false` : Disable check updates when starting rep.
       - `check_updates_on_opening`
         - `true` : Enable check updates when starting rep before threshold time.
-        - `false` : Disable check updates when starting rep before threshold time.
+        - `false` : Disable check updates when starting rep before threshold
+          time.
       - `skip_top_page`
         - `true` : Enable skipping top page.
         - `false` : Disable skipping top page.
@@ -122,7 +140,8 @@ Config files are `.toml`.
         - `false` : rep will not show confirm dialog when you push send button.
       - `save_text_file`
         - `true` : Enable saving contents of each report you send to text files.
-        - `false` : Disable saving contents of each report you send to text files.
+        - `false` : Disable saving contents of each report you send to text
+          files.
       - `save_destination`
         - `true` : Enable saving destination of each report you send.
         - `false` : Disable saving destination of each report you send.
@@ -163,7 +182,8 @@ Config files are `.toml`.
         - Templates are used for subject, head, or foot of each report.
         - You can add parameters. Parameters are explained later.
 - `dest`
-  - `dest` is config for report destination. You can configure destination on a report-by-report basis.(daily / weekly / monthly)
+  - `dest` is config for report destination. You can configure destination on a
+    report-by-report basis.(daily / weekly / monthly)
 
 ## 📝 Parameters
 
@@ -198,23 +218,27 @@ The values that can be used as command-line arguments are as follows:
   - 0: Disable the monthly page at startup.
   - 1: Enable the monthly page at startup.
 
-If there are not exactly three command-line arguments or if values other than 0 or 1 are specified, rep will not start.
+If there are not exactly three command-line arguments or if values other than 0
+or 1 are specified, rep will not start.
 
-If no command-line arguments are specified, rep will start with only the daily page enabled.
+If no command-line arguments are specified, rep will start with only the daily
+page enabled.
 
 It is recommended to create and use shortcuts as follows:
 
 - Shortcut for daily reports (command-line arguments : `1, 0, 0`)
-- Shortcut for daily and weekly reports for use every weekend (command-line arguments : `1, 1, 0`)
-- Shortcut for daily and monthly reports for use at the end of each month (command-line arguments : `1, 0, 1`)
+- Shortcut for daily and weekly reports for use every weekend (command-line
+  arguments : `1, 1, 0`)
+- Shortcut for daily and monthly reports for use at the end of each month
+  (command-line arguments : `1, 0, 1`)
 
 ## 📃 License
 
-[🔓MIT](./LICENSE)
+[🔓 MIT](./LICENSE)
 
 ## 🖊️ Author
 
-[🏹yanosea](https://github.com/yanosea)
+[🏹 yanosea](https://github.com/yanosea)
 
 ## 🤝 Contributing
 
