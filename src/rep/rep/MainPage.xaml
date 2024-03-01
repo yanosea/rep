@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:rep"
+             x:Class="rep.MainPage">
+    <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
+        <BlazorWebView.RootComponents>
+            <!-- replace elements with #rep in wwwroot/index.html with the contents of Main.razor -->
+            <RootComponent Selector="#rep" ComponentType="{x:Type local:Main}" />
+        </BlazorWebView.RootComponents>
+    </BlazorWebView>
+</ContentPage>

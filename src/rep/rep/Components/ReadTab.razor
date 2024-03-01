@@ -1,0 +1,26 @@
+<!-- read tab -->
+@inherits Layouts.BaseLayout
+
+<div class="flex space-x-4 tracking-widest">
+    <span class="@($"{(report.Equals(Resources.Text.Pages.NameReadDaily) ? "brightness-100" : "brightness-200")} transition hover:brightness-100")">
+        <div @onclick="@(x => Redirect(Resources.Text.Pages.PathReadDaily))" style="cursor: hand; cursor:pointer;">daily</div>
+        @if (report.Equals(Resources.Text.Pages.NameReadDaily))
+        {
+            <div class="h-1 mt-1 bg-black dark:bg-gray-50 rounded-full" />
+        }
+    </span>
+    <span class="@($"{(report.Equals(Resources.Text.Pages.NameReadWeekly) ? "brightness-100" : "brightness-200")} transition hover:brightness-100")">
+        <div @onclick="@(x => Redirect(Resources.Text.Pages.PathReadWeekly))" style="cursor: hand; cursor:pointer;">weekly</div>
+        @if (report.Equals(Resources.Text.Pages.NameReadWeekly))
+        {
+            <div class="h-1 mt-1 bg-black dark:bg-gray-50 rounded-full" />
+        }
+    </span>
+    <span class="@($"{(report.Equals(Resources.Text.Pages.NameReadMonthly) ? "brightness-100" : "brightness-200")} transition hover:brightness-100")">
+        <div @onclick="@(x => Redirect(Resources.Text.Pages.PathReadMonthly))" style="cursor: hand; cursor:pointer;">monthly</div>
+        @if (report.Equals(Resources.Text.Pages.NameReadMonthly))
+        {
+            <div class="h-1 mt-1 bg-black dark:bg-gray-50 rounded-full" />
+        }
+    </span>
+</div>

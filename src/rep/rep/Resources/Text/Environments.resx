@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DirNameCachedFiles" xml:space="preserve">
+    <value>.cache</value>
+    <comment>attached files cache directory name</comment>
+  </data>
+  <data name="DirNameClosing" xml:space="preserve">
+    <value>closing</value>
+    <comment>closing directory name</comment>
+  </data>
+  <data name="DirNameConfig" xml:space="preserve">
+    <value>config</value>
+    <comment>config directory name</comment>
+  </data>
+  <data name="DirNameDaily" xml:space="preserve">
+    <value>daily</value>
+    <comment>daily directory name</comment>
+  </data>
+  <data name="DirNameDestConfig" xml:space="preserve">
+    <value>dest</value>
+    <comment>dest config directory name</comment>
+  </data>
+  <data name="DirNameErrorLog" xml:space="preserve">
+    <value>errorlogs</value>
+    <comment>error log directory name</comment>
+  </data>
+  <data name="DirNameGit" xml:space="preserve">
+    <value>rep</value>
+    <comment>git directory name</comment>
+  </data>
+  <data name="DirNameGitHidden" xml:space="preserve">
+    <value>.git</value>
+    <comment>git  hidden directory name</comment>
+  </data>
+  <data name="DirNameLog" xml:space="preserve">
+    <value>logs</value>
+    <comment>log directory name</comment>
+  </data>
+  <data name="DirNameMonthly" xml:space="preserve">
+    <value>monthly</value>
+    <comment>monthly directory name</comment>
+  </data>
+  <data name="DirNameOpening" xml:space="preserve">
+    <value>opening</value>
+    <comment>opening directory name</comment>
+  </data>
+  <data name="DirNameRep" xml:space="preserve">
+    <value>rep</value>
+    <comment>rep directory name</comment>
+  </data>
+  <data name="DirNameRepInstaller" xml:space="preserve">
+    <value>rep-installer</value>
+    <comment>rep installer directory name</comment>
+  </data>
+  <data name="DirNameReport" xml:space="preserve">
+    <value>reports</value>
+    <comment>reports directory name</comment>
+  </data>
+  <data name="DirNameReportConfig" xml:space="preserve">
+    <value>report</value>
+    <comment>report config directory name</comment>
+  </data>
+  <data name="DirNameWeekly" xml:space="preserve">
+    <value>weekly</value>
+    <comment>weekly directory name</comment>
+  </data>
+  <data name="FileNameCredentialConfig" xml:space="preserve">
+    <value>.cred.toml</value>
+    <comment>credential config file name</comment>
+  </data>
+  <data name="FileNameDailyConfig" xml:space="preserve">
+    <value>daily_conf.toml</value>
+    <comment>daily report config file name</comment>
+  </data>
+  <data name="FileNameDailyDestConfig" xml:space="preserve">
+    <value>daily_dest_conf.toml</value>
+    <comment>daily dest config file name</comment>
+  </data>
+  <data name="FileNameLogConfig" xml:space="preserve">
+    <value>log_conf.toml</value>
+    <comment>log config file name</comment>
+  </data>
+  <data name="FileNameMonthlyConfig" xml:space="preserve">
+    <value>monthly_conf.toml</value>
+    <comment>monthly report config file name</comment>
+  </data>
+  <data name="FileNameMonthlyDestConfig" xml:space="preserve">
+    <value>monthly_dest_conf.toml</value>
+    <comment>monthly dest config file name</comment>
+  </data>
+  <data name="FileNamePreferencesConfig" xml:space="preserve">
+    <value>preferences.toml</value>
+    <comment>preferences config file name</comment>
+  </data>
+  <data name="FileNameRepInstaller" xml:space="preserve">
+    <value>rep-installer.exe</value>
+    <comment>rep installer file name</comment>
+  </data>
+  <data name="FileNameSQLiteDB" xml:space="preserve">
+    <value>reports.db</value>
+    <comment>sqlite db file name</comment>
+  </data>
+  <data name="FileNameWeeklyConfig" xml:space="preserve">
+    <value>weekly_conf.toml</value>
+    <comment>weekly report config file name</comment>
+  </data>
+  <data name="FileNameWeeklyDestConfig" xml:space="preserve">
+    <value>weekly_dest_conf.toml</value>
+    <comment>weekly dest config file name</comment>
+  </data>
+</root>

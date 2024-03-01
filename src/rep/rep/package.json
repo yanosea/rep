@@ -1,0 +1,17 @@
+{
+  "name": "rep",
+  "author": "yanosea",
+  "version": "0.0.1",
+  "description": "make your reporting easier",
+  "scripts": {
+    "buildcss": "postcss wwwroot/css/tailwind.css -o wwwroot/css/tailwind.min.css"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.28",
+    "postcss-cli": "^10.1.0",
+    "svgo": "^2.8.0",
+    "tailwindcss": "^3.3.3"
+  }
+}

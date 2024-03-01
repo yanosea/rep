@@ -1,0 +1,25 @@
+<!-- text with icon link of rep -->
+@inherits Layouts.BaseLayout
+
+<span class="flex items-center">
+    <Heroicon Name=@icon class="w-5" />
+    @if (href.Contains("http"))
+    {
+        <!-- for external links, a tag -->
+        <a href=@href
+           target="@(targetBlank.HasValue && targetBlank.Value ? "_blank" : "undefined")"
+           rel="@(targetBlank.HasValue && targetBlank.Value ? "noopener noreferrer" : "undefined")"
+           class="ml-2 text-base tracking-widest hover:underline">
+            @text
+        </a>
+    }
+    else
+    {
+        <!-- for internal links, redirect element -->
+        <span @onclick="@(x => Redirect(href))"
+              class="ml-2 text-base tracking-widest hover:underline"
+              style="cursor: hand; cursor:pointer;">
+            @text
+        </span>
+    }
+</span>

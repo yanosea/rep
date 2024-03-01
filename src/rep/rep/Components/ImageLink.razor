@@ -1,0 +1,22 @@
+﻿<!-- image link of rep -->
+@inherits Layouts.BaseLayout
+
+@if (href.Contains("http"))
+{
+    <!-- for external links, a tag -->
+    <a href="@href"
+       target="@(targetBlank.HasValue && targetBlank.Value ? "_blank" : "undefined")"
+       rel="@(targetBlank.HasValue && targetBlank.Value ? "noopener noreferrer" : "undefined")"
+       class="flex items-center">
+        <img class="w-6" src="@img" alt="@alt" />
+    </a>
+}
+else
+{
+    <!-- for internal links, redirect element -->
+    <span @onclick="@(x => Redirect(href))"
+         class="flex items-center"
+         style="cursor: hand; cursor:pointer;">
+        <img class="w-6" src="@img" alt="@alt" />
+    </span>
+}

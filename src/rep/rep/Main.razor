@@ -1,0 +1,12 @@
+﻿<Router AppAssembly="@typeof(Main).Assembly">
+    <!-- for known path -->
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(Layouts.BaseLayout)" />
+    </Found>
+    <!-- for unknown path -->
+    <NotFound>
+        <LayoutView Layout="@typeof(Layouts.BaseLayout)">
+            <rep.Pages.NotFound></rep.Pages.NotFound>
+        </LayoutView>
+    </NotFound>
+</Router>

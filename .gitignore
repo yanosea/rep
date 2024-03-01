@@ -1,0 +1,9 @@
+# folder
+src/rep/.vs/
+src/rep/rep/bin/
+src/rep/rep/obj/
+src/rep/rep/node_modules/
+
+# file
+*.skrold
+src/rep/rep/rep.csproj.user

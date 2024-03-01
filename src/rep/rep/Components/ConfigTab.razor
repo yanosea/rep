@@ -1,0 +1,40 @@
+<!-- config tab -->
+@inherits Layouts.BaseLayout
+
+<div class="flex space-x-4 tracking-widest">
+    <span class="@($"{(config.Equals(Resources.Text.Pages.NameConfigCredential) ? "brightness-100" : "brightness-200")} transition hover:brightness-100")">
+        <div @onclick="@(x => Redirect(Resources.Text.Pages.PathConfigCredential))" style="cursor: hand; cursor:pointer;">credential</div>
+        @if (config.Equals(Resources.Text.Pages.NameConfigCredential))
+        {
+            <div class="h-1 mt-1 bg-black dark:bg-gray-50 rounded-full" />
+        }
+    </span>
+    <span class="@($"{(config.Equals(Resources.Text.Pages.NameConfigPreferences) ? "brightness-100" : "brightness-200")} transition hover:brightness-100")">
+        <div @onclick="@(x => Redirect(Resources.Text.Pages.PathConfigPreferences))" style="cursor: hand; cursor:pointer;">preferences</div>
+        @if (config.Equals(Resources.Text.Pages.NameConfigPreferences))
+        {
+            <div class="h-1 mt-1 bg-black dark:bg-gray-50 rounded-full" />
+        }
+    </span>
+    <span class="@($"{(config.Equals(Resources.Text.Pages.NameConfigDaily) ? "brightness-100" : "brightness-200")} transition hover:brightness-100")">
+        <div @onclick="@(x => Redirect(Resources.Text.Pages.PathConfigDaily))" style="cursor: hand; cursor:pointer;">daily</div>
+        @if (config.Equals(Resources.Text.Pages.NameConfigDaily))
+        {
+            <div class="h-1 mt-1 bg-black dark:bg-gray-50 rounded-full" />
+        }
+    </span>
+    <span class="@($"{(config.Equals(Resources.Text.Pages.NameConfigWeekly) ? "brightness-100" : "brightness-200")} transition hover:brightness-100")">
+        <div @onclick="@(x => Redirect(Resources.Text.Pages.PathConfigWeekly))" style="cursor: hand; cursor:pointer;">weekly</div>
+        @if (config.Equals(Resources.Text.Pages.NameConfigWeekly))
+        {
+            <div class="h-1 mt-1 bg-black dark:bg-gray-50 rounded-full" />
+        }
+    </span>
+    <span class="@($"{(config.Equals(Resources.Text.Pages.NameConfigMonthly) ? "brightness-100" : "brightness-200")} transition hover:brightness-100")">
+        <div @onclick="@(x => Redirect(Resources.Text.Pages.PathConfigMonthly))" style="cursor: hand; cursor:pointer;">monthly</div>
+        @if (config.Equals(Resources.Text.Pages.NameConfigMonthly))
+        {
+            <div class="h-1 mt-1 bg-black dark:bg-gray-50 rounded-full" />
+        }
+    </span>
+</div>

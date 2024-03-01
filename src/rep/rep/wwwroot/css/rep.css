@@ -1,0 +1,50 @@
+/* font setting */
+@font-face {
+    font-family: '';
+    src: url('../fonts/Itim.woff') format('woff');
+}
+body {
+    font-family: 'Itim', 'sans-serif';
+}
+
+/* page transition setting */
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        background-color: #f3f4f6;
+    }
+
+    100% {
+        opacity: 1;
+        background-color: #f3f4f6;
+    }
+}
+body.fadeinlightclass {
+    animation: fadein 1s forwards;
+}
+@keyframes fadeindark {
+    0% {
+        opacity: 0;
+        background-color: #111827;
+    }
+
+    100% {
+        opacity: 1;
+        background-color: #111827;
+    }
+}
+body.fadeindarkclass {
+    animation: fadeindark 1s forwards;
+}
+
+/* open details setting */
+summary {
+    cursor: pointer;
+    outline: none;
+}
+
+/* textarea setting */
+.textarea-autoresize {
+    overflow: hidden;
+    height: auto;
+}

@@ -1,0 +1,26 @@
+<!-- write tab -->
+@inherits Layouts.BaseLayout
+
+<div class="flex space-x-4 tracking-widest">
+    <span class="@($"{(report.Equals(Resources.Text.Pages.NameWriteDaily) ? "brightness-100" : "brightness-200")} transition hover:brightness-100")">
+        <div @onclick="@(x => Redirect(Resources.Text.Pages.PathWriteDaily))" style="cursor: hand; cursor:pointer;">daily</div>
+        @if (report.Equals(Resources.Text.Pages.NameWriteDaily))
+        {
+            <div class="h-1 mt-1 bg-black dark:bg-gray-50 rounded-full" />
+        }
+    </span>
+    <span class="@($"{(report.Equals(Resources.Text.Pages.NameWriteWeekly) ? "brightness-100" : "brightness-200")} transition hover:brightness-100")">
+        <div @onclick="@(x => Redirect(Resources.Text.Pages.PathWriteWeekly))" style="cursor: hand; cursor:pointer;">weekly</div>
+        @if (report.Equals(Resources.Text.Pages.NameWriteWeekly))
+        {
+            <div class="h-1 mt-1 bg-black dark:bg-gray-50 rounded-full" />
+        }
+    </span>
+    <span class="@($"{(report.Equals(Resources.Text.Pages.NameWriteMonthly) ? "brightness-100" : "brightness-200")} transition hover:brightness-100")">
+        <div @onclick="@(x => Redirect(Resources.Text.Pages.PathWriteMonthly))" style="cursor: hand; cursor:pointer;">monthly</div>
+        @if (report.Equals(Resources.Text.Pages.NameWriteMonthly))
+        {
+            <div class="h-1 mt-1 bg-black dark:bg-gray-50 rounded-full" />
+        }
+    </span>
+</div>
